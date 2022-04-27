@@ -11,18 +11,16 @@ export function treeFlat(node: TreeNode): Array<string> {
 }
 
 // TODO
-const getChildrenIds = (node) => {
+const getChildrenIds = node => {
   const result = [];
   result.push(node.id);
 
-  if (node.children || []) {
-    node.children.forEach((e) => {
-      result.push(e.id);
-      e.children.forEach((e2) => {
-        result.push(...getChildrenIds(e2));
-      });
+  (node.children || []).forEach(e => {
+    result.push(e.id);
+    e.children.forEach(e2 => {
+      result.push(...getChildrenIds(e2));
     });
-  }
+  });
   return result;
 };
 
@@ -34,9 +32,9 @@ const data1: TreeNode = {
     { id: '2', children: [] },
     {
       id: '3',
-      children: [{ id: '4', children: [] }],
-    },
-  ],
+      children: [{ id: '4', children: [] }]
+    }
+  ]
 };
 
 const expected1 = ['1', '2', '3', '4'];
