@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "noImplicitAny": false,
+    "noEmit": true,
+    "strictNullChecks": false,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "isolatedModules": true,
+    "pretty": true,
+    "lib": ["dom", "es2017"],
+    "types": []
+  },
+  "compileOnSave": false,
+  "buildOnSave": false
+}
