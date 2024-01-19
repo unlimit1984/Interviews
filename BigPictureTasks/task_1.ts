@@ -1,7 +1,10 @@
 // Problem
 export function timeouts() {
-  console.log(1);
-  setTimeout(() => console.log(2), 100);
-  setTimeout(() => console.log(3), 0);
-  console.log(4);
+  console.log('start1');
+  setTimeout(() => console.log('setTimeout2'), 100);
+  setTimeout(() => console.log('setTimeout3'), 0);
+  Promise.resolve(1).then(()=>{console.log('promise')});
+  console.log('finish4');
 }
+
+timeouts();

@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "execute": "ts-node",
-    "example": "npm run  execute -- task_1.ts",
-    "example7": "npm run  execute -- task_7.ts"
+    "example": "npm run  execute -- task_12.ts"
   },
   "author": "",
   "license": "ISC",
